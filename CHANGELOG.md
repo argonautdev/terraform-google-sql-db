@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [13.1.0](https://github.com/terraform-google-modules/terraform-google-sql-db/compare/v13.0.1...v13.1.0) (2022-12-29)
+
+
+### Features
+
+* add `secondary_zone`, `follow_gae_application` to safer_mysql ([#390](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/390)) ([05cd2b6](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/05cd2b6983b0c88f3cbade94abdb1c74a0dc388c))
+* add Suffix to backup configurations ([#377](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/377)) ([0ea1968](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/0ea1968291957d3637724ebe8f69af48736a45e4))
+* adds deletion_policy parameter for google_sql_user and google_sql_database resource. ([#386](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/386)) ([8ab6e37](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/8ab6e374dd74a8c3f5d6963640f9eb945cd996f5))
+* adds settings.location_preference.follow_gae_application parameter to modules. ([#385](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/385)) ([edefa43](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/edefa43e0b42f382fc2f9e96d8a28cefea473c98))
+
+
+### Bug Fixes
+
+* Added functionality to simply specify the database version number ins… ([#388](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/388)) ([83ca2e2](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/83ca2e2a2791325421162b68eafa6264a550ecfa))
+* Added sensitive field in output "primary" in mssql module ([#394](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/394)) ([4b32479](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/4b32479921fa85ce1a477ad1415032d795dc3953))
+* fixes lint issues and generates metadata ([#392](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/392)) ([dd1d75c](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/dd1d75cff8d21c16299a026edb88d3939daf99d1))
+* made 'allocated_ip_range' variable optional ([#395](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/395)) ([243c1c5](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/243c1c556b801505fb6c1e35dd5ffe23091bce0b))
+* sensitive output safer mysql ([#401](https://github.com/terraform-google-modules/terraform-google-sql-db/issues/401)) ([5cc5e08](https://github.com/terraform-google-modules/terraform-google-sql-db/commit/5cc5e08d575f16f1cf588bd7fd28f3e50b29647d))
+
 ## [13.0.1](https://github.com/terraform-google-modules/terraform-google-sql-db/compare/v13.0.0...v13.0.1) (2022-11-11)
 
 
