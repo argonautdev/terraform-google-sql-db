@@ -196,6 +196,7 @@ resource "google_sql_user" "default" {
     google_sql_database_instance.default,
     google_sql_database_instance.replicas,
   ]
+  deletion_policy = var.user_deletion_policy
 }
 
 resource "google_sql_user" "additional_users" {
@@ -209,6 +210,7 @@ resource "google_sql_user" "additional_users" {
     google_sql_database_instance.default,
     google_sql_database_instance.replicas,
   ]
+  deletion_policy = var.user_deletion_policy
 }
 
 resource "google_project_iam_member" "iam_binding" {
